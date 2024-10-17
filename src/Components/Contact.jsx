@@ -9,6 +9,10 @@ const Contact = () => {
         className='w-[50%] text-zinc-200 mx-10 p-5 text-xl outline-none border border-zinc-600 bg-transparent' 
         type="text" 
         placeholder='Enter Your Name'/>
+        <input 
+        className='w-[50%] text-zinc-200 mx-10 p-5 text-xl outline-none border border-zinc-600 bg-transparent' 
+        type="text" 
+        placeholder='Enter Your Name'/>
       </form>
     </div>
   )
