@@ -44,21 +44,24 @@ const TvDetails = () => {
           onClick={() => Navigate(-1)}
           className="ri-arrow-left-line text-white mr-3 text-2xl  hover:text-[#6556CD] "
         ></i>
+        {Info.external_ids.imdb_id && 
         <a
           target="_blank"
           href={`https://www.imdb.com/title/${Info.external_ids.imdb_id}/`}
         >
           <FontAwesomeIcon icon={faImdb} />
-        </a>
+        </a> }
+        { Info.external_ids.wikidata_id && 
         <a
           target="_blank"
           href={`https://www.wikidata.org/wiki/${Info.external_ids.wikidata_id}`}
         >
           <FontAwesomeIcon icon={faWikipediaW} />
-        </a>
+        </a> }
+        {Info.details.homepage &&  
         <a target="_blank" href={`${Info.details.homepage}`}>
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
-        </a>
+        </a> }
       </nav>
 
       <Outlet />

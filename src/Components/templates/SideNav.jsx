@@ -37,7 +37,7 @@ const SideNav = () => {
         <Link to='/about' className="hover:bg-[#6556CD] p-4 hover:text-white rounded-lg duration-300">
         <i className="mr-2 ri-information-2-fill"></i>  About MovieHub
         </Link>
-        <Link className="hover:bg-[#6556CD] p-4  hover:text-white rounded-lg duration-300">
+        <Link to='/contact-us' className="hover:bg-[#6556CD] p-4  hover:text-white rounded-lg duration-300">
         <i className="mr-2 ri-phone-fill"></i> Contact Us
         </Link>
       </nav>
