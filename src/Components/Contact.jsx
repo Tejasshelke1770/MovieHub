@@ -10,7 +10,7 @@ const Contact = () => {
         type="text" 
         placeholder='Enter Your Name'/>
 
-      <h1>tejas</h1>
+      
        
       </form>
     </div>
