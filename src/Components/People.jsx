@@ -11,7 +11,7 @@ const People = () => {
     const [person, setPerson] = useState([])
     const [page, setPage] = useState(1)
     const [hasMore, setHasMore] = useState(true)
-    console.log(person)
+    // console.log(person)
 
     const getPeople = async()=>{
         try {

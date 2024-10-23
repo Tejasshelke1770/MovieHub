@@ -21,7 +21,7 @@ const TvDetails = () => {
   const dispatch = useDispatch();
   const Navigate = useNavigate();
   const { Info } = useSelector((state) => state.tv);
-  console.log(Info);
+  // console.log(Info);
 
   useEffect(() => {
     dispatch(asyncloadTv(id));
