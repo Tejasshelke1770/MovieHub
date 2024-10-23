@@ -13,7 +13,7 @@ import Recommendation from "./templates/Recommendation";
 const MovieDetails = () => {
   const { pathname } = useLocation();
   const { Info } = useSelector((state) => state.movie);
-  console.log(Info);
+  // console.log(Info);
   const { id } = useParams();
   const dispatch = useDispatch();
   const Navigate = useNavigate();

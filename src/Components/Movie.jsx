@@ -19,7 +19,7 @@ const Movie = () => {
   const getMovies = async () => {
     try {
       const { data } = await axios.get(`/movie/${category}?language=en-US&page=${page}`);
-      console.log(data);
+      // console.log(data);
       if(data.results.length > 0){
           setMovies((prev) => [...prev, ...data.results]);
           setPage(page + 1);

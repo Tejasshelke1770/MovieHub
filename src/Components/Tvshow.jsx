@@ -21,7 +21,7 @@ const Tvshow = () => {
     const getTvData = async()=>{
       try {
       const {data} = await axios.get(`/tv/${category}?language=en-US&page=${page}`)
-      console.log(data)
+      // console.log(data)
       if(data.results.length > 0){
         setTvData((prev)=> [...prev,...data.results])
         setPage(page+1)

@@ -16,7 +16,7 @@ const People = () => {
     const getPeople = async()=>{
         try {
             const{data} = await axios.get(`/person/popular?language=en-US&page=${page}`)
-            console.log(data)
+            // console.log(data)
            if(data.results.length > 0){
             setPerson((prev)=> [...prev, ...data.results])
             setPage(page + 1)
