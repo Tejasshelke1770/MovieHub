@@ -6,9 +6,7 @@ const Header = ({ data }) => {
   return (
     <div
       style={{
-        background: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5), rgba(0,0,0,.7)), url(https://image.tmdb.org/t/p/original/${
-          data.backdrop_path || data.profile_path
-        })`,
+        background: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5), rgba(0,0,0,.7)), url(https://image.tmdb.org/t/p/original/${data.backdrop_path || data.profile_path})`,
         backgroundSize: "contain, cover",
         backgroundPosition: "center ",
       }}
@@ -19,13 +17,11 @@ const Header = ({ data }) => {
       </h1>
       <p className="w-[70%] mt-3 mb-3 ">
         {data.overview.slice(0, 200)} ...
-        <Link to={`/${data.media_type}/details/${data.id}`} className="text-blue-400 ">More</Link>
+        <Link to={`/${data.media_type}/details/${data.id}`} className="text-blue-400 hover:text-blue-600">More</Link>
       </p>
       <p className="mb-5 ">
         <i className="ri-megaphone-fill mr-1 text-yellow-500"></i>
-        {data.first_air_date
-          ? data.first_air_date.toString().slice(0, 4)
-          : data.release_date.toString().slice(0, 4)}
+        {data.first_air_date ? data.first_air_date.toString().slice(0, 4) : data.release_date.toString().slice(0, 4)}
         <i className="ri-record-circle-fill mr-1 ml-4 text-yellow-500"></i>
         {data.media_type.toUpperCase()}
         <i className="ri-music-2-fill mr-1 ml-4 text-yellow-500"></i>
